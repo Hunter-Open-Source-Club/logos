@@ -1,0 +1,200 @@
+html {
+	height: 98%;
+}
+body {
+	background-image: url("assets/bliss.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 100%;
+	position: relative;
+	overflow-y: hidden;
+	overflow-x: hidden;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+}
+
+/*__          _______ _   _ _____   ______          _______ 
+  \ \        / /_   _| \ | |  __ \ / __ \ \        / / ____|
+   \ \  /\  / /  | | |  \| | |  | | |  | \ \  /\  / / (___  
+    \ \/  \/ /   | | | . ` | |  | | |  | |\ \/  \/ / \___ \ 
+     \  /\  /   _| |_| |\  | |__| | |__| | \  /\  /  ____) |
+      \/  \/   |_____|_| \_|_____/ \____/   \/  \/  |_____/*/
+
+.logo_window {
+	overflow-y: auto;
+	text-align: center;
+	display: inline-block;
+	position: absolute;
+}
+
+.logo {
+	margin-left: auto;
+	width: 20em;
+	border-radius: 10px;
+	border: 2px solid black;
+	margin:0.5em;
+	background-color: white;
+}
+
+#window_josh {
+	bottom:4%;
+	left:2.5%;
+	max-width: 45%;
+	max-height: 44%;
+}
+
+#window_luis {
+	top:0;
+	right:0;
+	max-width: 48%;
+	max-height: 50%;
+}
+
+#window_ferduse {
+	bottom: 4%;
+	right: 2%;
+	max-width: 45%;
+	max-height: 44%;
+}
+
+#window_gillian {
+	top: 0;
+	left: 0;
+	max-width: 50%;
+	max-height: 50%;
+}
+
+#window_form
+{
+	display: none;
+}
+
+/*_______        _____ _  ______          _____  
+ |__   __|/\    / ____| |/ /  _ \   /\   |  __ \ 
+    | |  /  \  | (___ | ' /| |_) | /  \  | |__) |
+    | | / /\ \  \___ \|  < |  _ < / /\ \ |  _  / 
+    | |/ ____ \ ____) | . \| |_) / ____ \| | \ \ 
+    |_/_/    \_\_____/|_|\_\____/_/    \_\_|  \_\*/
+
+#taskbar {
+    position: absolute;
+    bottom: 0;
+    background: linear-gradient(180deg,#0997ff,#0053ee 8%,#0050ee 40%,#06f 88%,#06f 93%,#005bff 95%,#003dd7 96%,#003dd7);
+    display: block;
+    width: 101.4%;
+    margin-top:0;
+    margin-bottom: -1.1em;
+}
+
+#start_btn {
+	margin-left:-1em;
+}
+
+#start_menu {
+	z-index: 999;
+	position: absolute;
+	bottom: 3%;
+	left: -0.5%;
+	min-width: 25em;
+	min-height: 50%;
+	background-color: white;
+	border: 2px solid #003dd7;
+	border-radius: 3px;
+	box-shadow: 4px 4px 4px rgba(0,0,0,0.7);
+	display: none;
+}
+
+#start_menu_top {
+	background: linear-gradient(180deg,#0997ff,#0053ee 8%,#0050ee 40%,#06f 88%,#06f 93%,#005bff 95%,#003dd7 96%,#003dd7);
+	padding: 1%;
+	margin-bottom: 2%;
+}
+
+#start_menu_contents {
+	margin-bottom: 85%;
+}
+
+#start_menu_bottom {
+	background: linear-gradient(180deg,#0997ff,#0053ee 8%,#0050ee 40%,#06f 88%,#06f 93%,#005bff 95%,#003dd7 96%,#003dd7);
+	height: 1.5em;
+	padding: 1%;
+}
+
+#pfp {
+	border-radius: 10px;
+	border: 1px solid white;
+}
+
+#username {
+	display: inline-block;
+	color: white;
+	padding:0;
+	margin:0;
+	margin-left: 0.2em;
+	transform: translateY(-0.7em);
+	font-size: 1.3em;
+}
+
+#shutdown_btn {
+	border: 1px solid white;
+	border-radius: 3px;
+	float: right;
+}
+
+.application {
+	border-radius: 3px;
+	width: 90%;
+	margin-left: 2%;
+}
+
+.application:hover {
+	background-color: gray;
+}
+
+.application:hover .desc_color {
+	color: white;
+}
+
+.application_icon {
+	width: 20%;
+}
+
+.application_desc {
+	display: inline-block;
+	transform: translateY(-1em);
+	margin-bottom:0;
+}
+
+.desc_color {
+	color: gray;
+}
+
+/* ____ _______ _    _ ______ _____  
+  / __ \__   __| |  | |  ____|  __ \ 
+ | |  | | | |  | |__| | |__  | |__) |
+ | |  | | | |  |  __  |  __| |  _  / 
+ | |__| | | |  | |  | | |____| | \ \ 
+  \____/  |_|  |_|  |_|______|_|  \_\*/
+
+canvas {
+	display: block;
+	position:absolute;
+	top:-1em;
+	left:-1em;
+	z-index: 9999;
+
+}
+
+@media screen and (max-width: 1070px) {
+	.logo {width: 15em;}
+}
+@media screen and (max-width: 840px) {
+	.logo {width: 10em;}
+}
+@media screen and (max-width: 610px) {
+	.logo {width: 7em;}
+}
+@media screen and (max-width: 520px) {
+	#taskbar { width: 102.4%; }
+}
